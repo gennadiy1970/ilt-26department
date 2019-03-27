@@ -3,31 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <title>Sergiy Feodosyev</title>
+    <link rel="stylesheet" href="../css/min-style.css" />
     <style>
-      .body {
-        font-family: 'Andika', Verdana, Arial, Helvetica, sans-serif;
+      li > p::first-letter {
+        font-size: 100%;
         font-weight: normal;
-      }
-      .wrapper {
-        max-width: 1024px;
-        margin: auto;
-        padding: 2rem 1.5rem 2rem 2.5rem;
-        box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2);
-      }
-      p {
-        margin-bottom: 20px;
-        text-align: justify;
-        line-height: 1.5;
-      }
-      li {
-        margin-bottom: 10px;
-        text-align: justify;
       }
     </style>
   </head>
-  <body class="body">
-    <div class="wrapper">
-      <h3>Sergey (Sergiy) Feodosyev, Leading Researcher</h3>
+  <body>
+    <div class="wrapper" id="top">
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-menu__item">
+            <a
+              class="nav-menu__link animation-underline"
+              rel="noopener nofollow"
+              target="_blank"
+              href="http://www.ilt.kharkov.ua/"
+            >
+              ILTPE</a
+            >
+          </li>
+          <li class="nav-menu__item">
+            <a
+              class="nav-menu__link animation-underline"
+              rel="noopener nofollow"
+              target="_blank"
+              href="../../../index.html"
+              >Department</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h2>Sergey (Sergiy) Feodosyev, Leading Researcher</h2>
+      <hr />
+      <div class="container">
+          <div class="box clearfix">
       <img
         src="./feodosyev_files/feodosyev.jpg"
         alt="Sergey Feodosyev, Leading Researcher"
@@ -57,12 +69,12 @@
       <p>PhD(Phys&amp; Math), B. Verkin ILTPE of NASU, 1985.</p>
       <p>DrS(Phys &amp; Math), the same institute, 2009</p>
       <p>Senior Researcher (Theoretical Physics, 2002)</p>
-
-      <p>
-        <b>Research area:</b>
-        Lattice Dynamics, phonons and other quasi-particle excitations in
+</div>
+  <div class="box">
+<h3>Research area:</h3>
+       <h4> Lattice Dynamics, phonons and other quasi-particle excitations in
         solids:
-      </p>
+       </h4>
       <ul>
         <li>
           <p>
@@ -89,16 +101,15 @@
         </li>
       </ul>
 
-      <p style="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
+      <p>
         (See also:
         <a href="../syrkin/syrkin_files/kosevich_group/kosevich_group.html"
           >A.M. Kosevich research group</a
         >)
       </p>
-
-      <p style="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-        <b>Main achievements:</b>
-      </p>
+</div>
+<div class="box">
+      <h3>Main achievements:</h3>
       <ul>
         <li>
           <p>
@@ -142,22 +153,16 @@
           </p>
         </li>
         <li>
-          <p class="western" style="margin-bottom: 0.19in; line-height: 100%">
+          <p>
             Creation of calculation models for investigation of electron and
             phonon spectra of graphite and carbonic nanostructures.
           </p>
         </li>
       </ul>
-      <p
-        class="western"
-        style="margin-left: 0.5in; margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%"
-      >
-        <br />
-        <br />
-      </p>
-      <p style="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%">
-        <b>Main Publications:</b>
-      </p>
+</div>
+     <div class="box">
+        <h3>Main Publications:</h3>
+      
       <ol>
         <li>
           <p>
@@ -476,6 +481,9 @@
           </p>
         </li>
       </ol>
+      </div>
+    </div>
+    <a href="#top" class="nav-up"></a>
     </div>
   </body>
 </html>
