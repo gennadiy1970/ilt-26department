@@ -1,0 +1,31 @@
+body {
+    background: #CCCCCC;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+li.s {
+    margin-bottom: 5px;
+}
+
+.go-top-button {
+    width: 75px;
+    height: 75px;
+    background-image: url('go-top.png');
+}
+
+.go-top-button:hover {
+    cursor: pointer;
+}
