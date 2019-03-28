@@ -3,37 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <title>Chishko</title>
-    <!-- <link
-    href="https://fonts.googleapis.com/css?family=Andika"
-    rel="stylesheet"
-  /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/min-style.css" />
   </head>
   <body>
     <div class="wrapper" id="top">
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-menu__item">
-            <a
-              class="nav-menu__link animation-underline"
-              rel="noopener nofollow"
-              target="_blank"
-              href="http://www.ilt.kharkov.ua/"
-            >
-              ILTPE</a
-            >
-          </li>
-          <li class="nav-menu__item">
-            <a
-              class="nav-menu__link animation-underline"
-              rel="noopener nofollow"
-              target="_blank"
-              href="../../../index.html"
-              >Department</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <header class="page-header">
+        <div class="logo-wrp">
+          <a href="http://www.ilt.kharkov.ua/"
+            ><img class="logo" src="../../../img/logo.gif" alt="logo ILTPE"
+          /></a>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-menu__item" id="ilpte">
+              <a
+                href="http://www.ilt.kharkov.ua/"
+                class="nav-menu__link animation-underline"
+                rel="noopener nofollow"
+              >
+                ILTPE</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../../index.html"
+                >Department</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../members.html"
+                >Members</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../history.html"
+                >History</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../monographs.html"
+                >Monographs</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../we-remember.html"
+                >We remember</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                id="mobile-link"
+                href="../../international-links.html"
+                >Interlinks</a
+              >
+              <a
+                class="nav-menu__link animation-underline"
+                id="desktop-link"
+                href="../../international-links.html"
+                >International links</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
       <h2>Konstantin Chishko, Leading Researcher.</h2>
       <hr />
       <div class="container">
@@ -45,8 +93,17 @@
             width="200"
           />
           <p>
-            E-mail:
-            <a href="mailto:chishko@ilt.kharkov.ua">chishko@ilt.kharkov.ua</a>
+            <i class="fas fa-envelope"></i> B. Verkin Institute for Low
+            Temperature Physics & Engineering of Ukrainian Academy of Sciences,
+            47, Nauky Ave., <br />61103 Kharkov, Ukraine
+          </p>
+          <p>
+            <i class="fas fa-at"></i>
+            <a
+              class="link animation-underline"
+              href="mailto:chishko@ilt.kharkov.ua"
+              >chishko@ilt.kharkov.ua</a
+            >
           </p>
           <p>Graduated from Kharkov State University in1971.</p>
           <p>PhD Phys & Math : ILTPE, 1977.</p>
@@ -79,7 +136,7 @@
         </p>
       </div>
       <div class="box">
-        <h3>1. Quantum Solids and Liquids</h3>
+        <h3><span class="color-alt">1.</span> Quantum Solids and Liquids</h3>
         <p>
           <b>Thermodynamics of solid helium mixtures</b> A consistent theory was
           developed for description of the temperature dependences of separating
@@ -165,8 +222,8 @@
       </div>
       <div class="box">
         <h3>
-          2. Acoustic and electromagnetic emission during plastic deformation of
-          solids.
+          <span class="color-alt">2.</span> Acoustic and electromagnetic
+          emission during plastic deformation of solids.
         </h3>
         <p>
           <b>Acoustic (AE) and electromagnetic (EME) emissions</b> during
@@ -180,8 +237,8 @@
       </div>
       <div class="box">
         <h3>Selected publications:</h3>
-        <p>Totalnumber of publications – over 120.</p>
-        <ol>
+        <p>Totalnumber of publications – over <b class="color-alt">120</b>.</p>
+        <ol class="publications-list">
           <li>
             V.D.Natsik, K.A.Chishko. Sound radiation during annihilation of
             dislocations. Fizika Tverdogo Tela , <b>14</b>, No. 12, 3126-3132
@@ -502,55 +559,55 @@
             ><b>5</b>, No.3 (2019).
           </li>
         </ol>
-        <div>
-          <h3>Participation in international conferences:</h3>
-          <ul>
-            <li>
-              1997 – CC1997, Wroclaw-Polanica, Poland
-            </li>
-            <li>
-              1999 – LT22, Helsinki, Finland
-            </li>
-            <li>
-              2000 – CC2000, Szklarska Poreba, Poland
-            </li>
-            <li>
-              2001 – QFS2001, Konstanz, Germany
-            </li>
-            <li>
-              2002 –CC2002, Munich-Freising, Germany
-            </li>
-            <li>
-              2004 – QFS2004, Trento, Italy
-            </li>
-            <li>
-              2006 – QFS2006, Kyoto, Japan
-            </li>
-            <li>
-              2010 – QFS2010, Grenoble, France
-            </li>
-            <li>
-              2010 – CC2010, Chernogolovka, Russia
-            </li>
-            <li>
-              2012 –CC2012, Odessa, Ukraine
-            </li>
-            <li>
-              2016 – QFS2016, Prague, Czech Republic
-            </li>
-            <li>
-              2017 – ULT2017, Heidelberg, Germany
-            </li>
-            <li>
-              2018 – QFS2018, Tokyo, Japan
-            </li>
-            <li>
-              2018 – CC2018, Wroclaw, Poland
-            </li>
-          </ul>
-        </div>
-        <a href="#top" class="nav-up"></a>
       </div>
+      <div class="box">
+        <h3>Participation in international conferences:</h3>
+        <ul class="unsorted-list">
+          <li>
+            1997 – CC1997, Wroclaw-Polanica, Poland
+          </li>
+          <li>
+            1999 – LT22, Helsinki, Finland
+          </li>
+          <li>
+            2000 – CC2000, Szklarska Poreba, Poland
+          </li>
+          <li>
+            2001 – QFS2001, Konstanz, Germany
+          </li>
+          <li>
+            2002 –CC2002, Munich-Freising, Germany
+          </li>
+          <li>
+            2004 – QFS2004, Trento, Italy
+          </li>
+          <li>
+            2006 – QFS2006, Kyoto, Japan
+          </li>
+          <li>
+            2010 – QFS2010, Grenoble, France
+          </li>
+          <li>
+            2010 – CC2010, Chernogolovka, Russia
+          </li>
+          <li>
+            2012 –CC2012, Odessa, Ukraine
+          </li>
+          <li>
+            2016 – QFS2016, Prague, Czech Republic
+          </li>
+          <li>
+            2017 – ULT2017, Heidelberg, Germany
+          </li>
+          <li>
+            2018 – QFS2018, Tokyo, Japan
+          </li>
+          <li>
+            2018 – CC2018, Wroclaw, Poland
+          </li>
+        </ul>
+      </div>
+      <a href="#top" class="nav-up"></a>
     </div>
   </body>
 </html>

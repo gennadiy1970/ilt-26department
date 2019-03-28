@@ -4,79 +4,106 @@
     <meta charset="UTF-8" />
     <title>Yuriy Monarkha</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Andika"
       rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/min-style.css" />
-    <style>
-      .img-wrp {
-        margin: 0 1rem 0 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-      }
-      .list-sltileless {
-        list-style: none;
-        padding-left: 0;
-      }
-      @media (min-width: 560px) {
-        .img-wrp {
-          float: left;
-        }
-      }
-      @media (min-width: 768px) {
-        .header {
-          display: flex;
-          justify-content: space-between;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="wrapper" id="top">
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-menu__item">
-            <a
-              class="nav-menu__link animation-underline"
-              rel="noopener nofollow"
-              target="_blank"
-              href="http://www.ilt.kharkov.ua/"
-            >
-              ILTPE</a
-            >
-          </li>
-          <li class="nav-menu__item">
-            <a
-              class="nav-menu__link animation-underline"
-              rel="noopener nofollow"
-              target="_blank"
-              href="../../../index.html"
-              >Department</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <header class="page-header">
+        <div class="logo-wrp">
+          <a href="http://www.ilt.kharkov.ua/"
+            ><img class="logo" src="../../../img/logo.gif" alt="logo ILTPE"
+          /></a>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-menu__item" id="ilpte">
+              <a
+                href="http://www.ilt.kharkov.ua/"
+                class="nav-menu__link animation-underline"
+                rel="noopener nofollow"
+              >
+                ILTPE</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../../index.html"
+                >Department</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../members.html"
+                >Members</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../history.html"
+                >History</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../monographs.html"
+                >Monographs</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../we-remember.html"
+                >We remember</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                id="mobile-link"
+                href="../../international-links.html"
+                >Interlinks</a
+              >
+              <a
+                class="nav-menu__link animation-underline"
+                id="desktop-link"
+                href="../../international-links.html"
+                >International links</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
       <h3>Yuriy Monarkha, Leading Researcher</h3>
       <hr />
       <div class="box clearfix header">
-        <div class="img-wrp">
-          <img
-            src="./monarkha_files/monarkha.jpg"
-            alt="Yuriy Monarkha, Leading Researcher"
-            style="float: left; margin-right: 1.5rem;"
-            width="200"
-          />
-        </div>
+        <img
+          class="photo"
+          src="./monarkha_files/monarkha.jpg"
+          alt="Yuriy Monarkha, Leading Researcher"
+          width="200"
+        />
         <div>
           <p>
-            E-mail:
-            <a href="mailto:monarkha@ilt.kharkov.ua">monarkha@ilt.kharkov.ua</a>
+            <i class="fas fa-at"></i>
+            <a
+              class="link animation-underline"
+              href="mailto:monarkha@ilt.kharkov.ua"
+              >monarkha@ilt.kharkov.ua</a
+            >
           </p>
           <p>
-            MAILING ADDRESS : B. Verkin Institute for Low Temperature Physics &
-            Engineering of Ukrainian Academy of Sciences, 47, Nauky Ave., 61103
-            Kharkov
+            <i class="fas fa-envelope"></i> B. Verkin Institute for Low
+            Temperature Physics & Engineering of Ukrainian Academy of Sciences,
+            47, Nauky Ave., <br />61103 Kharkov, Ukraine
           </p>
           <p>Graduated from Kharkov State University in1972.</p>
           <p>PhD Phys & Math, ILTPE, 1977.</p>
@@ -97,7 +124,7 @@
           strong internal interactions, and surface phenomena in quantum
           liquids.
         </p>
-        <ul>
+        <ul class="unsorted-list">
           <li>
             Two-dimensional (2D) Coulomb liquids and the Wigner solid formed on
             the free surface of liquid helium.
@@ -114,7 +141,7 @@
       </div>
       <div class="box">
         <h3>Main achivements:</h3>
-        <ul>
+        <ul class="unsorted-list">
           <li>
             The unconventional Hall Effect in 2D electron liquids, and dynamics
             of highly correlated electrons strongly coupled with medium
@@ -145,7 +172,7 @@
       </div>
       <div class="box">
         <h3>Main publications:</h3>
-        <ol>
+        <ol class="publications-list">
           <li>
             Yu. Monarkha and K. Kono, Two-Dimensional Coulomb Liquids and
             Solids, Springer-Verlag, Berlin, (2004).
@@ -198,8 +225,8 @@
             Two-Dimensional Electron Systems, Low Temp. Phys. 38, 451 (2012).
           </li>
         </ol>
-        <a href="#top" class="nav-up"></a>
       </div>
+      <a href="#top" class="nav-up"></a>
     </div>
   </body>
 </html>

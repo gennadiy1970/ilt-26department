@@ -1,5 +1,4 @@
 :root {
-    --bg: #303030;
     --cl: #303030;
     --alt: #6699ff;
   }
@@ -7,6 +6,28 @@
     margin: 0;
     padding: 0;
   }
+
+.unsorted-list {
+  list-style: none;
+}
+.unsorted-list li {
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--cl);
+}
+.unsorted-list li::before {
+  content: "";
+  --s: 7px;
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  background-color: var(--alt);
+  border-radius: 50%;
+  left: -.1rem;
+  top: .75rem;
+}
+
+
   @media screen and (min-width: 480px) {
     body {
       background: linear-gradient(
@@ -28,10 +49,14 @@
   }
   h1,
   h3 {
-    text-transform: uppercase;
     font-weight: normal;
   }
-
+  h3 {
+    color: var(--cl);
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    margin-left: 2rem;
+  }
   .tabs {
     display: block;
     position: relative;
@@ -100,13 +125,51 @@
   .nav-menu__item {
     margin: 0.5rem;
   }
+  .nav-menu__item {
+    margin: 0.5rem;
+  }
 
-  .nav-menu__link,
-  .link {
+  .nav-menu__link {
     text-decoration: none;
     text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.2);
     color: var(--cl);
   }
+  .link {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.2);
+    margin-left: 1rem;
+    color: var(--alt);
+  }
+#desktop-link {
+  display: block;
+ }
+#mobile-link {
+  display: none;
+ }
+#ilpte {
+  display: none;
+}
+.logo-wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 64px;
+  box-shadow: 0 0 12px 2px hsla(0, 0%, 0%, .2);
+}
+.nav-menu__link {
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: 4rem;
+}
+.color-alt {
+  color: var(--alt);
+}
+.color-main {
+  color: var(--cl);
+}
   .animation-underline {
     position: relative;
   }
@@ -255,6 +318,44 @@
       grid-row: 3 / 4;
     }
   }
+  @media (min-width: 560px) {
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+    }
+    .nav-menu__item {
+      display: inline-block;
+      box-shadow: none;
+    }
+    .nav-menu__link {
+      line-height: 1.5;
+    }
+    .nav-menu__item:hover {
+      box-shadow: none;
+    }
+    #desktop-link {
+      display: none;
+    }
+    #mobile-link {
+      display: block;
+     }
+  }
+  @media (min-width: 768px) {
+    .wrapper {
+      padding: 2rem 1rem 2rem 2.5rem;
+    }
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+    }
+    #ilpte,
+    #desktop-link {
+      display: block;
+     }
+    #mobile-link {
+      display: none;
+     }
+  }
   @media (min-width: 800px) {
     .person-info {
       display: grid;
@@ -320,11 +421,7 @@
     margin-top: 2rem;
     opacity: 0.2;
   }
-  .achievements-list {
-      margin-left: 2rem;
-    list-style-type: disc;
-    color: var(--cl);
-  }
+
   .nav-up::before {
     content: "";
     position: absolute;

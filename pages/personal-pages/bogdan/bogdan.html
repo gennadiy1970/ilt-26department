@@ -15,19 +15,24 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./bogdan_files/style.css" />
+    <link rel="stylesheet" href="../css/min-style.css" />
+    <!-- <link rel="stylesheet" href="./bogdan_files/style.css" /> -->
   </head>
   <body>
     <div class="wrapper">
-      <div id="tab-content1" class="content">
+      <header class="page-header">
+        <div class="logo-wrp">
+          <a href="http://www.ilt.kharkov.ua/"
+            ><img class="logo" src="../../../img/logo.gif" alt="logo ILTPE"
+          /></a>
+        </div>
         <nav>
           <ul class="nav-menu">
-            <li class="nav-menu__item">
+            <li class="nav-menu__item" id="ilpte">
               <a
+                href="http://www.ilt.kharkov.ua/"
                 class="nav-menu__link animation-underline"
                 rel="noopener nofollow"
-                target="_blank"
-                href="http://www.ilt.kharkov.ua/"
               >
                 ILTPE</a
               >
@@ -35,81 +40,111 @@
             <li class="nav-menu__item">
               <a
                 class="nav-menu__link animation-underline"
-                rel="noopener nofollow"
-                target="_blank"
                 href="../../../index.html"
                 >Department</a
               >
             </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../members.html"
+                >Members</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../history.html"
+                >History</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../monographs.html"
+                >Monographs</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../we-remember.html"
+                >We remember</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                id="mobile-link"
+                href="../../international-links.html"
+                >Interlinks</a
+              >
+              <a
+                class="nav-menu__link animation-underline"
+                id="desktop-link"
+                href="../../international-links.html"
+                >International links</a
+              >
+            </li>
           </ul>
         </nav>
+      </header>
+      <h2>Mikhail Bogdan, Leading Researcher.</h2>
+      <hr />
+      <div class="container">
+        <div class="box clearfix">
+          <img
+            class="photo"
+            src="./bogdan_files/bogdan.jpg"
+            alt="Photo of Mikhail Bogdan"
+            title="Mikhail Bogdan"
+            width="200"
+          />
+          <p style="text-indent: .5rem">
+            <i class="fas fa-envelope"></i> Department of Theoretical
+            Physics,<br />
+            B. Verkin Institute for Low Temperature Physics & Engineering
+            <br />
+            of the National Academy of Sciences of Ukraine<br />
+            47 Nauky Ave., Kharkiv, 61103, Ukraine
+          </p>
+          <p class="ti-0">
+            <a
+              class="link animation-underline "
+              href="mailto:bogdan@ilt.kharkov.ua"
+            >
+              <i class="fas fa-at"></i>
+              bogdan&#64;ilt.kharkov.ua</a
+            >
+          </p>
+          <p class="ti-0">
+            <a class="link animation-underline " href="tel:+380573410812">
+              <i class="fas fa-phone"></i>
+              +38 (057) 341-09-39</a
+            >
+          </p>
 
-        <h1 class="title">Mikhail Bogdan</h1>
-        <hr />
-        <h3>Leading Researcher</h3>
-        <br />
-        <div class="person-info">
-          <div class="person-info__photo">
-            <img
-              class="photo"
-              src="./bogdan_files/bogdan.jpg"
-              alt="Photo of Mikhail Bogdan"
-              title="Mikhail Bogdan"
-            />
-          </div>
-          <ul class="person-info__work">
-            <li>Department of Theoretical Physics,</li>
-            <li>
-              B. Verkin Institute for Low Temperature Physics & Engineering
-            </li>
-            <li>of the National Academy of Sciences of Ukraine</li>
-            <li>47 Nauky Ave., Kharkiv, 61103, Ukraine</li>
-          </ul>
-          <!-- <br /> -->
-          <ul class="person-info__contacts">
-            <li>
-              <a
-                class="link animation-underline "
-                href="mailto:bogdan@ilt.kharkov.ua"
-              >
-                <i class="fas fa-at"></i>
-                bogdan&#64;ilt.kharkov.ua</a
-              >
-            </li>
-            <li>
-              <a class="link animation-underline " href="tel:+380573410812">
-                <i class="fas fa-phone"></i>
-                +38 (057) 341-09-39</a
-              >
-            </li>
-          </ul>
-
-          <!-- <br /> -->
-          <ul class="person-info__biography">
-            <li>Graduated from Kharkov State University in 1974.</li>
-            <li>
-              Post-graduate Study in Kharkov State University, 1974-1977.
-            </li>
-            <li>PhD Phys & Math, B.&nbsp;Verkin ILTPE of NASU, 1983.</li>
-            <li>DSc Phys & Math, B.&nbsp;Verkin ILTPE of NASU, 2001.</li>
-          </ul>
+          <p>Graduated from Kharkov State University in 1974.</p>
+          <p>
+            Post-graduate Study in Kharkov State University, 1974-1977.
+          </p>
+          <p>PhD Phys & Math, B.&nbsp;Verkin ILTPE of NASU, 1983.</p>
+          <p>DSc Phys & Math, B.&nbsp;Verkin ILTPE of NASU, 2001.</p>
         </div>
-        <details open>
-          <summary><h4 class="subtitle">Research area:</h4></summary>
-          <p class="ti">
+        <div class="box">
+          <h3>Research area:</h3>
+          <p>
             The theory of nonlinear phenomena in condensed matter physics based
             on the soliton concept and its applications for description of
             nonlinear effects in solids.
           </p>
-        </details>
+        </div>
 
-        <details open>
-          <summary
-            ><h4 class="subtitle">
-              Main achievements are the following:
-            </h4></summary
-          >
-          <ul class="achievements-list">
+        <div class="box">
+          <h3>
+            Main achievements are the following:
+          </h3>
+          <ul class="unsorted-list">
             <li>
               Finding the exact multisoliton solutions of the Landau-Lifshitz
               equation for one-dimensional biaxial ferromagnet,
@@ -131,14 +166,13 @@
               the presence of a magnetic field.
             </li>
           </ul>
-        </details>
-        <details open>
-          <summary
-            ><h4 class="subtitle">
-              Last five years activity and current interests:
-            </h4>
-          </summary>
-          <p class="ti">
+        </div>
+        <div class="box">
+          <h3>
+            Last five years activity and current interests:
+          </h3>
+
+          <p>
             Subjects of current investigations include dynamical properties of
             nonlinear excitations in condensed matter, especially soliton
             interaction and formation of multisoliton complexes in strongly
@@ -154,50 +188,49 @@
             discrete breathers and nonlinear periodic waves in integrable models
             of anharmonic crystals and nonlinear transmission lines.
           </p>
-        </details>
+        </div>
 
-        <details open>
-          <summary><h4 class="subtitle">Educational activity:</h4></summary>
-          <ul class="achievements-list">
+        <div class="box">
+          <h3>Educational activity:</h3>
+          <ul class="unsorted-list">
             <li>
               Professor of Theoretical Physics Department Named by Academician
               I.M.&nbsp;Lifshits in Kharkov National University from 2006 up to
               now. Personal page in Kharkov University:
               <a
-                class="nav-menu__link animation-underline"
+                class="link animation-underline"
                 rel="noopener nofollow"
                 target="_blank"
                 href="http://physics.karazin.ua/en/pers_pages/bogdan_m_m.html"
               >
-                http://physics.karazin.ua/en/pers_pages/bogdan_m_m.html</a
-              >
+                <i class="fas fa-external-link-alt"></i
+              ></a>
             </li>
             <li>
               Supervisor of three PhD theses: two Doctors of Philosophy in
               theoretical physics and one in solid state physics.
             </li>
           </ul>
-        </details>
-        <details open>
-          <summary><h4 class="subtitle">Awards:</h4></summary>
-          <p class="ti">
+        </div>
+        <div class="box">
+          <h3>Awards:</h3>
+          <p>
             Certificates of Honour from Presidium of the NAS of Ukraine (2008,
             2018).
           </p>
-        </details>
-        <details open>
-          <summary
-            ><h4 class="subtitle">
-              List of XXI-century publications :
-            </h4></summary
-          >
+        </div>
+        <div class="box">
+          <h3>
+            List of XXI-century publications :
+          </h3>
+
           <ol class="publications-list">
             <li>
               M.M.&nbsp;Bogdan, A.M.&nbsp;Kosevich, and G.A.&nbsp;Maugin.
               Soliton Complex Dynamics in Strongly Dispersive Medium.
               <i>Wave Motion.</i> V.34, No.1, 1-26 (2001).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://www.sciencedirect.com/science/article/pii/S016521250100066X"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -205,7 +238,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/wave_mtn_2001.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -218,7 +251,7 @@
               Magnets with Magnetic and Nonmagnetic Impurities.
               <i>Physica Status Solidi (a).</i> V.189, No. 3, 983-988 (2002).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1002/1521-396X(200202)189:3983::AID-PSSA9833.0.CO;2-O"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -226,7 +259,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/bogdan2002.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -240,7 +273,7 @@
               <i>Proc. Estonian Acad. Sci. Phys. Math.</i> V.52, No.1, 76-84
               (2003).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="http://www.kirj.ee/public/va_fm/s03-1-fm.htm"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -253,7 +286,7 @@
               of nonlinear excitations of modulated nanoclusters.
               <i>Low Temperature Physics.</i> V. 31, No.7, 613-618 (2005).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.2001645"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -261,7 +294,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/bogdan_7_2005.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -274,7 +307,7 @@
               antiferromagnet.
               <i>Low Temperature Physics.</i> V.31, No.8/9, 968-973 (2005).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.2008133"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -282,7 +315,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/bogdan_8_9_2005.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -296,7 +329,7 @@
               <i> Uzhhorod University Scientific Herald. Series Physics.</i>
               Iss. 17, 30-37 (2005).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/Uzhhorod_2005.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -311,7 +344,7 @@
               <i>Theoretical and Mathematical Physics.</i> V. 144, No.2,
               1117-1127 (2005).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://link.springer.com/article/10.1007/s11232-005-0140-8"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -319,7 +352,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/boscolo2005.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -334,7 +367,7 @@
               devices.
               <i>Phys. Rev. E.</i> V.72, No.1 , 016601-1-016601-4 (2005).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.72.016601"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -342,7 +375,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/Phys_Rev_2005.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -358,7 +391,7 @@
                 Applications). </i
               >V.2, No.047, 1-12 (2006).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="http://www.emis.de/journals/SIGMA/2006/Paper047/"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -372,7 +405,7 @@
               <i> Uzhhorod University Scientific Herald. Series Physics. </i>
               Iss.21, 196-204 (2007) [in Ukrainian]
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.24144/2415-8038.2007.21.196-204"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -380,7 +413,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/Uzhhorod_2007.pdf"
                 title="Read the article"
                 rel="nofollow noopener"
@@ -394,7 +427,7 @@
               out-gap discrete solitons.
               <i>Low Temperature Physics.</i> V.33, No.5, 481-483 (2007).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.2737564"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -402,7 +435,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/kroon_5_2007.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -416,7 +449,7 @@
               low-dimensional systems
               <i>Low Temperature Physics. </i> V.33, No.12, 1073-1076 (2007).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.2807243"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -424,7 +457,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/bogdan_12_2007.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -437,7 +470,7 @@
               solitons in the sine-Gordon models with a strong dispersion
               <i>Nonlinear world. </i> V.6, No.5-6, 324-333 (2008) [in Russian].
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="http://www.radiotec.ru/article/4985"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -445,7 +478,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/nelin_mir_2008_rus.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -458,7 +491,7 @@
               states in regularized dispersive equations.
               <i>Low Temperature Physics. </i> V.34, No 7, 564-570 (2008).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.2957009"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -466,7 +499,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/fnt_2008_7_engl.pdf"
                 title="Download the article"
                 rel="nofollow noopener"
@@ -481,7 +514,7 @@
               <i> Uzhhorod University Scientific Herald. Series Physics. </i>
               Iss.24, 100-107 (2009) [in Ukrainian].
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.24144/2415-8038.2009.24.100-107"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -489,7 +522,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/Uzhgorod_2009_ukr.pdf"
                 title="Read the article"
                 rel="nofollow noopener"
@@ -502,7 +535,7 @@
               antiferromagnets with precessing domain walls
               <i> Low Temperature Physics. </i> V.40, N1, 84-90 (2014).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.4862465"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -516,7 +549,7 @@
               excitations in magnetic metamaterials
               <i> Low Temperature Physics. </i> V.40, N3, 234-238 (2014).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.4869569"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -530,7 +563,7 @@
               <i> Journal of Mathematical Physics. </i>
               V.55, No.4, 042903-1-042903-22, (2014).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.4870649"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -538,7 +571,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/laptev_2014.pdf"
                 title="Read the article"
                 rel="nofollow noopener"
@@ -553,7 +586,7 @@
               <i> Journal of the Physical Society of Japan. </i>
               V.83, No.6, 064007-1-064007-9 (2014).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.7566/JPSJ.83.064007"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -561,7 +594,7 @@
                 ><i class="fas fa-book-open"></i
               ></a>
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="./bogdan_files/bogdan_publications_file.pdf/bogdan_2014.pdf"
                 title="Read the article"
                 rel="nofollow noopener"
@@ -575,7 +608,7 @@
               magnetic nanoclusters
               <i> Low Temperature Physics. </i> V.44, N7, 644-650 (2018).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.5041429"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -589,7 +622,7 @@
               spin nanoclusters in anisotropic ferromagnetic chains.
               <i> Low Temperature Physics. </i> V.44, N12, 1331-1340 (2018).
               <a
-                class="publications-link"
+                class="link animation-underline"
                 href="https://doi.org/10.1063/1.5078629"
                 title="Link to article"
                 rel="nofollow noopener"
@@ -598,10 +631,9 @@
               ></a>
             </li>
           </ol>
-        </details>
+        </div>
       </div>
-      <!-- </ul> -->
+      <a href="#top" class="nav-up"></a>
     </div>
-    <a href="#top" class="nav-up"></a>
   </body>
 </html>

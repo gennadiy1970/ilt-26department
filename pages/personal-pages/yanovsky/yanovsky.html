@@ -4,38 +4,90 @@
     <meta charset="UTF-8" />
     <title>Andrey Yanovsky</title>
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Andika"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="stylesheet" href="../css/min-style.css" />
   </head>
 
   <body>
     <div class="wrapper" id="top">
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-menu__item">
-            <a
-              class="nav-menu__link animation-underline"
-              rel="noopener nofollow"
-              target="_blank"
-              href="http://www.ilt.kharkov.ua/"
-            >
-              ILTPE</a
-            >
-          </li>
-          <li class="nav-menu__item">
-            <a
-              class="nav-menu__link animation-underline"
-              rel="noopener nofollow"
-              target="_blank"
-              href="../../../index.html"
-              >Department</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <h2>Andrey Yanovskiy.</h2>
+      <header class="page-header">
+        <div class="logo-wrp">
+          <a href="http://www.ilt.kharkov.ua/"
+            ><img class="logo" src="../../../img/logo.gif" alt="logo ILTPE"
+          /></a>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-menu__item" id="ilpte">
+              <a
+                href="http://www.ilt.kharkov.ua/"
+                class="nav-menu__link animation-underline"
+                rel="noopener nofollow"
+              >
+                ILTPE</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../../index.html"
+                >Department</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../members.html"
+                >Members</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../history.html"
+                >History</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../monographs.html"
+                >Monographs</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                href="../../we-remember.html"
+                >We remember</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link animation-underline"
+                id="mobile-link"
+                href="../../international-links.html"
+                >Interlinks</a
+              >
+              <a
+                class="nav-menu__link animation-underline"
+                id="desktop-link"
+                href="../../international-links.html"
+                >International links</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <h2>Andrey Yanovskiy, Senior Researcher, PhD.</h2>
       <hr />
       <div class="container">
         <div class="box clearfix">
@@ -45,11 +97,21 @@
             src="./yanovsky_files/yanovsky.jpg"
             width="200"
           />
-          <p>Senior Researcher, PhD</p>
-          <p>Phone: +38-057-340-03-12,</p>
-          <p>Fax: +(38)-057-340-33-70</p>
+          <p><i class="fas fa-phone"></i> +38-057-340-03-12,</p>
+          <p><i class="fas fa-fax"></i> +(38)-057-340-33-70</p>
           <p>
-            Email: <a href="mailto:yanovsky@kharkov.ua">yanovsky@kharkov.ua</a>
+            <i class="fas fa-at"></i>
+            <a
+              class="link animation-underline"
+              href="mailto:yanovsky@kharkov.ua"
+              >yanovsky@kharkov.ua</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i> Dr. Andrey V. Yanovsky<br />
+            B. Verkin Institute for Low Temperature Physics &amp; Engineering<br />
+            47, Nauky Ave.<br />
+            61103 Kharkiv UKRAINE
           </p>
           <p>Graduated from Kharkov State University in 1996.</p>
           <p>
@@ -65,7 +127,9 @@
             <b> Research Area :</b> Size-effects and kinetic properties of
             low-dimensional systems, spin transport phenomena, computer
             simulations. (See:
-            <a href="../gurzhi/gurzhi_files/gurzhi_research_group.html"
+            <a
+              class="link animation-underline"
+              href="../gurzhi/gurzhi_files/gurzhi_research_group.html"
               >Research group</a
             >
             of R.N. Gurzhi, A.I. Kopeliovich, A.N. Kalinenko and A.V.
@@ -77,6 +141,7 @@
               href="https://scholar.google.com.ua/citations?hl=en&user=t-DLh70AAAAJ"
               target="_blank"
               rel="noopener nofollow"
+              class="link animation-underline"
               >Profile in Google Scholar</a
             >
           </p>
@@ -85,6 +150,7 @@
               href="https://www.researchgate.net/profile/A_Yanovsky"
               target="_blank"
               rel="noopener nofollow"
+              class="link animation-underline"
               >Profile in ResearchGate</a
             >
           </p>
@@ -93,6 +159,7 @@
               href="http://orcid.org/0000-0001-7341-3322"
               target="_blank"
               rel="noopener nofollow"
+              class="link animation-underline"
               >ORCID</a
             >
           </p>
@@ -101,19 +168,13 @@
               href="https://www.researchgate.net/profile/A_Yanovsky/publications/"
               target="_blank"
               rel="noopener nofollow"
+              class="link animation-underline"
               >Publication List</a
             >
           </p>
         </div>
-        <div class="box">
-          <p>
-            Dr. Andrey V. Yanovsky<br />
-            B. Verkin Institute for Low Temperature Physics &amp; Engineering<br />
-            47, Nauky Ave.<br />
-            61103 Kharkiv UKRAINE
-          </p>
-        </div>
       </div>
+      <a href="#top" class="nav-up"></a>
     </div>
   </body>
 </html>
