@@ -10,12 +10,11 @@
     margin: auto;
     font-family: 'Andika', sans-serif;
     box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2);
-    padding:1rem;
+    padding: 0;
 }
 
 p {
   text-indent: 1rem;
-
 }
 
 p::first-letter {
@@ -25,7 +24,7 @@ p::first-letter {
 
 .box {
     box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
-    padding: 1rem;
+    padding: .5rem;
     margin-bottom: 1rem;
 }
 
@@ -111,6 +110,9 @@ p::first-letter {
   }
 }
 @media (min-width: 560px) {
+  .box {
+    padding: 1rem;
+  }
   .nav-menu {
     display: flex;
     justify-content: center;
@@ -155,6 +157,7 @@ p::first-letter {
 .publications-list {
   counter-reset: publications;
   list-style: none;
+  padding-left: 0.2rem;
 }
 .publications-list li {
   counter-increment: publications;
@@ -169,6 +172,7 @@ p::first-letter {
 
 .unsorted-list {
   list-style: none;
+  padding-left: .5rem;
 }
 .unsorted-list li {
   padding-left: 1.5rem;
@@ -195,7 +199,45 @@ p::first-letter {
   margin-left: 1rem;
   color: var(--alt);
 }
-
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.nav-up::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%) rotate(-45deg);
+  --s: 20px;
+  width: var(--s);
+  height: var(--s);
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  background-color: transparent;
+  z-index: 100;
+}
+.nav-up {
+position: sticky;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+bottom: 10px;
+left: 90%;
+--s: 60px;
+width: var(--s);
+height: var(--s);
+opacity: .2;
+border-radius: 50%;
+background-color: #f44336;
+box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
+transition: background-color,box-shadow .2s linear;
+}
+.nav-up:hover {
+  opacity: 1;
+}
 @media (min-width: 480px) {
   .photo {
     float: left;
@@ -236,7 +278,7 @@ p::first-letter {
   .cols > li {
     break-inside: avoid;
   } */
-  .clearfix::after {
+  /* .clearfix::after {
     content: "";
     display: block;
     clear: both;
@@ -274,7 +316,7 @@ p::first-letter {
 }
   .nav-up:hover {
     opacity: 1;
-  }
+  } */
   .animation-underline {
     position: relative;
   }
@@ -293,5 +335,13 @@ p::first-letter {
   }
   .animation-underline:hover::after {
     width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .publications-list li {
+    padding-left: 2rem;
+  }
+  .publications-list li::before {
+    margin-left: -2rem;
   }
 }
