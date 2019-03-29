@@ -382,7 +382,7 @@ figure {
     .text-center {
         text-align: center;
     }
-    .research-list {
+    .research-list--columns {
         columns: 2;
         column-gap: 2rem;
     }
