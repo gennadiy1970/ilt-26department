@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Young Modulus</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/young.css" /> -->
+  </head>
+  <body>
+    <script id="shader-fs" type="x-shader/x-fragment">
+      precision mediump float;
+      varying vec4 vColor;
+      void main(void)
+      {
+          gl_FragColor = vColor;
+      }
+    </script>
+    <script id="shader-vs" type="x-shader/x-vertex">
+      attribute vec3 aVertexPosition;
+      attribute vec4 aVertexColor;
+      uniform mat4 uMVMatrix;
+      uniform mat4 uPMatrix;
+      varying vec4 vColor;
+      void main(void) {
+          gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+          vColor = aVertexColor;
+      }
+    </script>
+    <h2>Use mouse for rotation</h2>
+    <div class="wrapper">
+      <canvas
+        id="WebGLCanvas"
+        width="800"
+        height="600"
+        oncontextmenu="return false;"
+        style="border: none;"
+      ></canvas>
+      <canvas
+        width="800"
+        height="600"
+        id="text"
+        style="border: none;"
+        oncontextmenu="return false;"
+      ></canvas>
+    </div>
+    <a class="nav-back" href="../lab.html">
+      <i class="fas fa-undo"></i>
+    </a>
+    <script type="text/javascript" src="./js/glMatrix-0.9.5.min.js"></script>
+    <script type="text/javascript" src="./js/young.js"></script>
+    <script type="text/javascript" src="./js/functions.js"></script>
+    <script>
+      webGLStart();
+    </script>
+  </body>
+</html>
+
+<!-- <body background="../img/bg_image.jpg" onload="webGLStart();">
+    <table border="1">
+      <tr>
+        <td>
+          <div class="container">
+            <canvas
+              id="WebGLCanvas"
+              style="border: none;"
+              width="800"
+              height="600"
+              oncontextmenu="return false;"
+            ></canvas>
+            <canvas
+              id="text"
+              width="800"
+              height="600"
+              oncontextmenu="return false;"
+            ></canvas>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <br /><br />
+    <center>
+      <table border="0">
+        <tr>
+          <td><img src="./img/img_3d.png" valign="center" width="40" /></td>
+          <td>Use mouse for rotation</td>
+        </tr>
+      </table>
+
+      <br />
+
+      <input
+        id="btnClose"
+        style="width:120px"
+        onclick="window.close();"
+        value="Close"
+        type="button"
+      />
+    </center>
+  </body>
+</html> -->

@@ -441,3 +441,24 @@ figure {
   .fas {
     color: var(--alt);
   }
+
+  
+  .hr {
+    color: var(--alt);
+    display: block;
+    height: 4px;
+    border: 0;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: 0px;
+    border-top: 4px solid var(--alt);
+    margin: 1em 0;
+    padding: 0;
+    opacity: 0.2;
+  }
+
+  .link {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.2);
+    color: var(--alt);
+  }
